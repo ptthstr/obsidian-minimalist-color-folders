@@ -1,0 +1,97 @@
+/* Minimalist Colored Folders (section color)
+
+Adapted from Lithou and pbhopeful by prrtzt
+
+This will allow you to add colors to the top level sections in your vault.
+The whole section of each top-level folder gets the color.
+Colors have to be in R, G, B, which allows you to apply an opacity setting. You can change all of that below.
+
+*/
+
+:root{
+    /* folder colors */
+    --Fold1: 243, 155, 155;
+    --Fold2: 240, 174, 89;
+    --Fold3: 241, 202, 93;
+    --Fold4: 157, 205, 120;
+    --Fold5: 138, 182, 226;
+    --Fold6: 170, 165, 219;
+    --Fold7: 211, 153, 207;
+    --Fold8: 205, 164, 133;
+    --Fold9: 185, 192, 12;
+	
+    /* Opacity setting */
+    --bgFoldOpacity: 0.20;
+
+    /* Margins and padding */
+    --foldBgPad: 5x;
+    --foldBgMar: 5px;
+}
+
+/* Folder Background Colors */        
+
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+2) {
+    background-color: rgba(var(--Fold1), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+3) {
+    background-color: rgba(var(--Fold2), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+4) {
+    background-color: rgba(var(--Fold3), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+5) {
+    background-color: rgba(var(--Fold4), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+6) {
+    background-color: rgba(var(--Fold5), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+7) {
+    background-color: rgba(var(--Fold6), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+8) {
+    background-color: rgba(var(--Fold7), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+9) {
+    background-color: rgba(var(--Fold8), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+.nav-folder.mod-root > .nav-folder-children > .nav-folder:nth-child(9n+10) {
+    background-color: rgba(var(--Fold9), var(--bgFoldOpacity));
+    border-radius: 5px; padding-top:var(--foldBgPad); padding-bottom: var(--foldBgPad); margin-top: var(--foldBgMar); margin-bottom: var(--foldBgMar);
+}
+
+/* Other settings */
+
+    .nav-file-title.is-active{ 
+		margin-right: 5px;
+		
+}
+    .nav-file-title:hover{ 
+		margin-right: 5px;
+}	
+
+    .nav-folder-title:hover{ 
+		margin-right: 5px;
+		margin-left: 5px;
+		padding-left: 3px;
+}
+
+.nav-folder.mod-root>.nav-folder-children>.nav-folder>.nav-folder-children{
+    padding-left: 0px;
+    padding-bottom: 5px;
+}
+
+.nav-file-title-content.is-being-renamed,
+.nav-folder-title-content.is-being-renamed {
+  cursor: text;
+  border-color: transparent;
+  background-color: white;
+  color: black;
+}
