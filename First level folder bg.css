@@ -71,10 +71,14 @@ Colors have to be in R, G, B, which allows you to apply an opacity setting. You 
 
     .nav-file-title.is-active{ 
 		margin-right: 5px;
+		margin-left:5px;
+		padding-left: 3px;
 		
 }
     .nav-file-title:hover{ 
 		margin-right: 5px;
+		margin-left:5px;
+		padding-left: 3px;
 }	
 
     .nav-folder-title:hover{ 
